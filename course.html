@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мої курси</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+	
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="course-header relative">
+			<div class="container">
+				<nav class="flex vertical-center">
+					<div class="menu-item flex vertical-center">
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/Logo.svg" alt="logo">
+							</a>
+						</div>
+						<div class="dropdown relative">
+							<span>Переглянути</span>
+							<i class="fa-solid fa-chevron-down"></i>
+							<div class="dropdown-menu absolute">
+								<div class="arrow absolute"></div>
+								<ul>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Дизайн</span>
+												<span class="dropdown-menu-subtitle">Курси про дизайн</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Програмування</span>
+												<span class="dropdown-menu-subtitle">Курси про програмування</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Бізнес та маркетинг</span>
+												<span class="dropdown-menu-subtitle">Курси про бізнес</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Фото та відео</span>
+												<span class="dropdown-menu-subtitle">Курси про фото та відео</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menu-item menu-item-search flex vertical-center relative ">
+						<input type="search" placeholder="Пошук курсів">
+						<i class="fa-solid fa-magnifying-glass absolute"></i>
+					</div>
+					<div class="menu-item menu-item-r flex vertical-center">
+						<a href="profile.html">Стати ментором</a>
+						<a href="404.html">
+							<i class="fa-solid fa-cart-shopping"></i>
+						</a>
+						<a href="404.html">
+							<i class="fa-regular fa-bell"></i>
+						</a>
+						<div class="avatar dropdown relative">
+							<img src="images/user.png" alt="user">
+							<div class="dropdown-menu absolute">
+								<div class="arrow absolute"></div>
+								<ul>
+									<li>
+										<div class="username">
+											Юрій Дудій
+										</div>
+										<div class="usermail">
+											<a href="mailto:doe.jonathan@email.com">doe.jonathan@email.com</a>
+										</div>
+									</li>
+									<li>
+										<a href="course.html">Мої курси</a>
+										<a href="404.html">Мій кошик</a>
+										<a href="404.html">Список бажань</a>
+									</li>
+									<li>
+										<a href="404.html">Повідомлення</a>
+										<a href="profile.html">Налаштування</a>
+									</li>
+									<li>
+										<a href="404.html" class="red-text">Вихід</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+    <main class="course-main">
+      <div class="container">
+        <section class="hero-section flex">
+          <div class="hero-section-l flex">
+            <div class="hero-section-title">
+              Вивчай щось нове кожного дня.
+            </div>
+            <div class="hero-section-subtitle">
+              Станьте професіоналом та готовим приєднатися до світу.
+            </div> 
+            <button class="hero-section-btn">
+              Спробуйте фотографію
+            </button>
+          </div>
+          <div class="hero-section-r flex">
+            <div class="hero-section-r-row flex">
+              <div class="icon">
+                <img src="images/photo.png" alt="">
+              </div>
+              <div class="name">
+                <div>Jane Kitani</div>
+                <div>Фотограф</div>
+              </div>
+              <div class="pull-r">
+                <div>Winner Photo 2018 Awwards</div>
+                <div>Joined Klevr since 2006</div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+      <section>
+        <div class="container">
+          <div class="flex flex-row">
+            <div>
+              <div class="section-title">
+                Мої курси
+              </div>
+              <div class="section-subtitle">
+                Список Ваших курсів
+              </div>
+            </div>
+            <div class="select">
+              <select name="list" id="list">
+                <option value="all">Усі оцінки</option>
+                <option value="5">5 зірок</option>
+                <option value="4">4 зірки</option>
+                <option value="3">3 зірки</option>
+                <option value="2">2 зірки</option>
+                <option value="1">1 зірка</option>
+              </select>
+              <select name="date" id="date">
+                <option value="new">Новіші</option>
+                <option value="old">Старіші</option>
+              </select>
+            </div>
+          </div>
+          
+
+          <div class="section-grid">
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/complete/1.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Java Programming Beginner
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                4/10 Відео переглянуто
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/complete/2.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                iOS 13 & Swift 5 - Complete iOS...
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                12/40 Відео переглянуто
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/complete/3.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Wordpress Course Intermediate
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Ghoniyyu Maulidi</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                3/8 Відео переглянуто
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/kitani/1.png" alt="">
+              </div>
+              <div class="section-grid-item-title uppercase ">
+                Java Programming Beginner
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/kitani/2.png" alt="">
+              </div>
+              <div class="section-grid-item-title uppercase">
+                UI DESIGN FOR BEGINNERS
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/kitani/3.png" alt="">
+              </div>
+              <div class="section-grid-item-title uppercase">
+                MOBILE DEV REACT NATIVE
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/kitani/4.png" alt="">
+              </div>
+              <div class="section-grid-item-title uppercase">
+                WEBSITE DEV ZERO TO HERO
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/1.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Adobe Illustrator Scretch Course
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/2.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Bootcamp  Vue.js Web Framework
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/3.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Design Fundamentals
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/4.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Ionic - Build iOS, Android & Web...
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/5.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Adobe Illustrator Scretch Course
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/6.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Bootcamp  Vue.js Web Framework
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+            <div class="section-grid-item">
+              <div class="section-grid-item-img">
+                <img src="images/trend/7.png" alt="">
+              </div>
+              <div class="section-grid-item-title">
+                Design Fundamentals
+              </div>
+              <div class="section-grid-item-author">
+                <i class="fa-regular fa-user"></i>
+                <span>Kitani Studio</span>
+              </div>
+              <div class="section-grid-item-subtitle">
+                Ще не розпочався
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination container flex">
+          <div class="filter-section-item ">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="filter-section-item filter-section-item-active">
+            1
+          </div>
+          <div class="filter-section-item">
+            2
+          </div>
+          <div class="filter-section-item">
+            3
+          </div>
+          <div class="filter-section-item">
+            4
+          </div>
+          <div class="filter-section-item">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="form relative flex">
+            <div class="form-item-l ">
+              <div class="form-title">Приєднуйтесь та отримайте знижку</div>
+              <div class="form-sutitle">З нашими адаптивними темами та мобільними та настільними програмами</div>
+            </div>
+            <div class="form-item-r flex relative">
+              <div class="input relative">
+                <input type="email" placeholder="Email адреса">
+                <i class="fa-solid fa-magnifying-glass absolute"></i>
+              </div>
+              <button class="submit">Підписатись</button>
+            </div>	
+            <div class="form-decor absolute"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+		
+
+		<footer>
+			<div class="container">
+				<div class="footer-top flex">
+					<div class="footer-logo">
+						<img src="images/Logo-light.svg" alt="logo">
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Web Programming</a>
+						<a href="404.html">Mobile Programming</a>
+						<a href="404.html">Java Beginner</a>
+						<a href="404.html">PHP Beginner</a>
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Adobe Illustrator</a>
+						<a href="404.html">Adobe Photoshop</a>
+						<a href="404.html">Design Logo</a>
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Writing Course</a>
+						<a href="404.html">Photography</a>
+						<a href="404.html">Video Making</a>
+					</div>
+				</div>
+				<div class="footer-bottom flex">
+					<div class="copyright">
+						Copyright © Ю. Дудій 2024. All Rights Reserved
+					</div>
+					<div class="footer-icons">
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-facebook-f"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    <div id="userModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Заповніть форму</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+          </div>
+          <button type="submit" class="submit">Підтвердити</button>
+        </form>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

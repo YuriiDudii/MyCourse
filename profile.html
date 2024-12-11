@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Налаштування</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+	
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="course-header relative">
+			<div class="container">
+				<nav class="flex vertical-center">
+					<div class="menu-item flex vertical-center">
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/Logo.svg" alt="logo">
+							</a>
+						</div>
+						<div class="dropdown relative">
+							<span>Переглянути</span>
+							<i class="fa-solid fa-chevron-down"></i>
+							<div class="dropdown-menu absolute">
+								<div class="arrow absolute"></div>
+								<ul>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Дизайн</span>
+												<span class="dropdown-menu-subtitle">Курси про дизайн</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Програмування</span>
+												<span class="dropdown-menu-subtitle">Курси про програмування</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Бізнес та маркетинг</span>
+												<span class="dropdown-menu-subtitle">Курси про бізнес</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex vertical-center">
+											<div>
+												<span class="dropdown-menu-title">Фото та відео</span>
+												<span class="dropdown-menu-subtitle">Курси про фото та відео</span>
+											</div>
+											<i class="fa-solid fa-chevron-right"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menu-item menu-item-search flex vertical-center relative ">
+						<input type="search" placeholder="Пошук курсів">
+						<i class="fa-solid fa-magnifying-glass absolute"></i>
+					</div>
+					<div class="menu-item menu-item-r flex vertical-center">
+						<a href="profile.html">Стати ментором</a>
+						<a href="404.html">
+							<i class="fa-solid fa-cart-shopping"></i>
+						</a>
+						<a href="404.html">
+							<i class="fa-regular fa-bell"></i>
+						</a>
+						<div class="avatar dropdown relative">
+							<img src="images/user.png" alt="user">
+							<div class="dropdown-menu absolute">
+								<div class="arrow absolute"></div>
+								<ul>
+									<li>
+										<div class="username">
+											Юрій Дудій
+										</div>
+										<div class="usermail">
+											<a href="mailto:doe.jonathan@email.com">doe.jonathan@email.com</a>
+										</div>
+									</li>
+									<li>
+										<a href="course.html">Мої курси</a>
+										<a href="404.html">Мій кошик</a>
+										<a href="404.html">Список бажань</a>
+									</li>
+									<li>
+										<a href="404.html">Повідомлення</a>
+										<a href="profile.html">Налаштування</a>
+									</li>
+									<li>
+										<a href="404.html" class="red-text">Вихід</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+    <main class="course-main profile">
+      <div class="profile-title">
+        Мій акаунт
+      </div>
+      <div class="profile-tabs flex">
+        <div class="profile-tab profile-tab-active">
+          Профіль
+        </div>
+        <div class="profile-tab">
+          Персоналізація
+        </div>
+        <div class="profile-tab">
+          Акаунт
+        </div>
+        <div class="profile-tab">
+          Оплата
+        </div>
+        <div class="profile-tab">
+          Повідомлення
+        </div>
+        <div class="profile-tab">
+          Договір
+        </div>
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="form-icon">
+            <img src="images/user.png" alt="">
+          </div>
+          <div class="form-element">
+            <label for="name">Ім'я</label>
+            <input id="name" type="text" value="Юрій">
+          </div>
+          <div class="form-element">
+            <label for="lastname">Прізвище</label>
+            <input id="lastname" type="text" value="Дудій">
+          </div>
+          <div class="form-element">
+            <input id="lastname" type="text" placeholder="Девіз">
+          </div>
+          <div class="form-element">
+            <label for="select">Мова</label>
+            <select name="select" id="select">
+              <option value="ukr">Українська</option>
+              <option value="en">Англійська</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="link">Посилання</label>
+            <input type="url">
+          </div>
+          <div class="form-element">
+            <input type="submit">
+          </div>
+        </form>
+      </div>
+      
+    </main>
+		
+
+		<footer>
+			<div class="container">
+				<div class="footer-top flex">
+					<div class="footer-logo">
+						<img src="images/Logo-light.svg" alt="logo">
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Web Programming</a>
+						<a href="404.html">Mobile Programming</a>
+						<a href="404.html">Java Beginner</a>
+						<a href="404.html">PHP Beginner</a>
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Adobe Illustrator</a>
+						<a href="404.html">Adobe Photoshop</a>
+						<a href="404.html">Design Logo</a>
+					</div>
+					<div class="footer-top-item">
+						<a href="404.html">Writing Course</a>
+						<a href="404.html">Photography</a>
+						<a href="404.html">Video Making</a>
+					</div>
+				</div>
+				<div class="footer-bottom flex">
+					<div class="copyright">
+						Copyright © Ю. Дудій 2024. All Rights Reserved
+					</div>
+					<div class="footer-icons">
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-facebook-f"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    <div id="userModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Заповніть форму</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+          </div>
+          <button type="submit" class="submit">Підтвердити</button>
+        </form>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
